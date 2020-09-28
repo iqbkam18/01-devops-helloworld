@@ -3,8 +3,8 @@ services:
   - docker
 env:
   global:
-  - GCP_PROJECT_ID=pgr301-2020-gcr-demo
-  - IMAGE=gcr.io/pgr301-2020-gcr-demo/helloworld
+  - GCP_PROJECT_ID=pgr301-docker-demo
+  - IMAGE=gcr.io/pgr301-docker-demo/helloworld
   - CLOUD_RUN_SERVICE=pgr301-docker-demo
   - CLOUD_RUN_REGION=us-central1
   - CLOUDSDK_CORE_DISABLE_PROMPTS=1
