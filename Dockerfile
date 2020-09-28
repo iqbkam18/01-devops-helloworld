@@ -6,4 +6,4 @@ RUN mvn package -DskipTests
 
 FROM openjdk:8-jdk-alpine
 COPY --from=builder /app/target/*.jar /app/application.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app/application.jar"]
+ENTRYPOINT ["java","-jar","/app/application.jar"]
